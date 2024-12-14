@@ -2,6 +2,9 @@
 
 # 尝试基于视频字幕对 ASR 结果进行矫正
 
+- 项目介绍: https://zhuanlan.zhihu.com/p/10856868833
+
+
 ## data preparation
 
     - scripts/01_prepare_asr_ocr_data.py
