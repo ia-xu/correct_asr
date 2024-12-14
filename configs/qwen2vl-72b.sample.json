@@ -1,0 +1,10 @@
+{
+  "model_type" : "qwen2-vl-7b-instruct",
+  "model_id_or_path": "Qwen2-VL-72B-Instruct",
+  "max_model_len" : 8192,
+  "port" : 11008 ,
+  "repetition_penalty" : 1.2,
+  "temperature" : 0.1,
+  "top_k" :3 ,
+  "top_p" : 0.1
+}

@@ -1,0 +1,26 @@
+
+{
+  "model_type" : "qwen2_vl",
+  "model": "Qwen2-VL-2B-Instruct",
+  "train_type": "lora",
+  "target_modules" : ["all-linear"],
+  "freeze_llm" : false,
+  "freeze_vit": false ,
+  "freeze_aligner": false,
+  "dataset": ["correct_asr_0","correct_asr_1","correct_asr_2","correct_asr_3","correct_asr_4","correct_asr_5"],
+  "val_dataset" : ["val_correct_asr_0","val_correct_asr_1"],
+  "num_train_epochs" : 8 ,
+  "max_length" : 2048,
+  "output_dir" : "~/corrected_asr_v3",
+  "per_device_train_batch_size" : 4 ,
+  "gradient_accumulation_steps" : 5 ,
+  "dataloader_num_workers": 4,
+  "learning_rate" : 5e-5,
+  "gradient_checkpointing" : true ,
+  "max_grad_norm" : 1.0,
+  "logging_steps" : 10,
+  "warmup_ratio" : 0.03,
+  "attn_impl": "flash_attn",
+  "save_strategy" : "epoch",
+  "eval_steps": 1000
+}

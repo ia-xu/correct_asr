@@ -1,0 +1,10 @@
+{
+  "model_type": "qwen2_vl",
+  "ckpt_dir": "/root/corrected_asr_v3/v0-20241214-093233/checkpoint-139",
+  "max_model_len": 8192,
+  "port": 11005,
+  "repetition_penalty": 1.2,
+  "temperature": 0.1,
+  "top_k": 3,
+  "top_p": 0.1
+}
